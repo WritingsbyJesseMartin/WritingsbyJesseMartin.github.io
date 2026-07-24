@@ -1,0 +1,6 @@
+title: "Writings by Jesse Martin"
+description: ""
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# GitHub Pages will build this automatically — no plugins needed.

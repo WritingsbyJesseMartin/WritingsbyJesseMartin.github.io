@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<div class="post-list">
+  {% for post in site.posts %}
+    {% if forloop.first %}
+    <article class="post-entry featured">
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <p class="date">{{ post.date | date: "%B %-d, %Y" }}</p>
+    </article>
+    {% else %}
+    <article class="post-entry">
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p class="date">{{ post.date | date: "%B %-d, %Y" }}</p>
+    </article>
+    {% endif %}
+  {% endfor %}
+</div>
